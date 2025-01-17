@@ -58,7 +58,7 @@
 
 　　　https://circuitpython.org/board/raspberry_pi_pico/
 
-・次にIDEの環境設定。
+・次にArduino IDEの環境設定。
 
 　・ボードライブラリの追加。
  
