@@ -35,7 +35,47 @@
 
 　
 
+　
+　
 ウォーターポンプはデュポンコネクタ等で配線加工してください。(メス,二つ口)
 
 　　参考：https://amzn.asia/d/89GqBZK
+
+　　
+
+　　
+
+　　
+
+    
+ ★使い方★
+ 
+・BOOTボタンを押しながら、USBケーブルをパソコンに接続。
+
+・PCではRP2040-Zeroをストレージとして認識。
+
+・UF2ファイルをダウンロードして、ストレージに保存。
+
+　　　https://circuitpython.org/board/raspberry_pi_pico/
+
+・次にIDEの環境設定。
+
+　・ボードライブラリの追加。
+ 
+　　IDE：ファイル>基本設定>追加のボードマネージャのURLに、( https://github.com/earlephilhower/arduino-pico/releases/download/global/package_rp2040_index.json )　を入力し適用。
+  
+　　IDE：ボードマネージャ>「RP2040」で検索>「Raspberry Pi Pico/RP2040/RP2350　by Earle F. Philhower」　をインストール。
+
+・ボードの選択。
+
+　IDE：ツール>ボード>Raspberry Pi Pico/RP2040/RP2350>Waveshare RP2040 Zero
+
+　　　を選択。
+
+・環境設定完了。
+
+・あとは好きなプログラムを入れて遊んでください。
+
+　まずはmain.inoなど。。。　https://github.com/cell-plus/StrawberryPi-Pico/blob/main/main.ino
+
  
