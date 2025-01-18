@@ -1,7 +1,7 @@
 # StrawberryPi-Pico
 土壌水分センサー・ポンプ・LEDを搭載した植物栽培特化型デバイス「StrawberryPi-Pico」
 
-======V0.1.0-202501======
+======V0.1.0-202501=========
 
 ・回路図　：https://image-pro.easyeda.com/pullimages/08d8bb2dcfd34de89ee88f67925cd60f.webp
 
@@ -11,15 +11,15 @@
 
 =========================
 
-======V0.1.1-202501======
+======V0.1.1-202501=========
 
 ・変更点：NPNトランジスタの代わりにNchMOSFETに変更
 
 　　　　-部品レイアウト、回路パターンの見直し
 
-・回路図　：
+・回路図　：https://image-pro.easyeda.com/pullimages/9387c33788cf4fc8a83c969c9d6c46e4.webp
 
-・PCB図面　：
+・PCB図面　：https://image-pro.easyeda.com/pullimages/377ebdb155c84c82ad2521dfd787f0dc.webp
 
 ========================
 
