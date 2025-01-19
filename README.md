@@ -17,9 +17,9 @@
 
 　　　　-部品レイアウト、回路パターンの見直し
 
-・回路図　：https://image-pro.easyeda.com/pullimages/9387c33788cf4fc8a83c969c9d6c46e4.webp
+・回路図　：https://image-pro.easyeda.com/pullimages/562a710350c64bd2afdc438bb16337d1.webp
 
-・PCB図面　：https://image-pro.easyeda.com/pullimages/377ebdb155c84c82ad2521dfd787f0dc.webp
+・PCB図面　：https://image-pro.easyeda.com/pullimages/f3d689709e2e455f8fa6b473361468a3.webp
 
 ========================
 
