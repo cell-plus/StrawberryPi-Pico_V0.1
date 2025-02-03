@@ -2,7 +2,7 @@
 
   StrawberryPi-Pico 
   by STRAWBERRY FARM<<１５>>
-  V0.1.0-202501
+  V0.1.1-202501
 
   Capacitive Soil Moisture Sensor v1.2
     dry : 685
@@ -29,7 +29,7 @@
 #define SENSOR_THRESHOLD 600    // センサーの閾値
 #define COUNT_THRESHOLD 12      // センサー閾値以下の回数の閾値 12
 #define SENSOR_INTERVAL 5000    // センサー読み取りの間隔（ミリ秒）
-#define PUMP_ON_DURATION 60000  // ポンプをONにする時間（ミリ秒）60000
+#define PUMP_ON_DURATION 59000  // ポンプをONにする時間（ミリ秒）60000
 
 #define BLUE_THRESHOLD 350    // 青色にする閾値
 #define GREEN_THRESHOLD 450   // 緑色にする閾値
