@@ -25,54 +25,99 @@
 
  
 
-以下の物は別途入手してください。
+免責 
 
-・ウォーターポンプ　：https://amzn.asia/d/5MyBmeY
+本器は自己責任において利用するものとし、利用者が被った不利益または損害について一切責任を負いません。 
 
-・静電容量式土壌水分センサー　：https://amzn.asia/d/6kMGpRw
-
-・NeoPixel LEDテープ　：https://amzn.asia/d/j20iAux
+本書の情報は2025年1月現在のものです。記載されたURLや手順が変更になる場合があります。 
 
 　
 
+注意事項 
+
+●供給電源　：	定格電圧5VDC　消費電流未計測　(USB電源) 
+
+●設定環境　：	USB接続、Arduino IDEでの書き込みが出来るPC環境をご準備ください。 
+
+●設置環境　：			・塵埃、金属粉、水滴飛散などの多いところでは防塵設計の筐体に収納してください。 
+
+・温度が60℃を越える環境、結露する環境では使用しないでください。 
+
+●その他　　：	本器は電源投入と同時に動作開始します。 
+
 　
+
+オプション品と配線接続 
+
+●ウォーターポンプ　：	https://amzn.asia/d/5MyBmeY 
+
+　デュポンコネクタなどで配線加工してください。(メス,二つ口)　参考：https://amzn.asia/d/89GqBZK 
+
+接続；Pump　VSS：赤線、　VCC：黒線 
+
+●静電容量式土壌水分センサー　：	https://amzn.asia/d/6kMGpRw 
+
+　接続：Sensor　A0：黄線、　3V3：赤線、　GND：黒線 
+
+●NeoPixel LEDテープ　：	https://amzn.asia/d/j20iAux 
+
+　接続；LED　GND：白線、　25：緑線、　VSS：赤線 
+
+　 
+
+ 　
+
+初期設定 
+
+・StrawberryPi-PicoにUSBケーブルを接続。 
+
+・StrawberryPi-Pico のBOOTボタンを押しながら、USBケーブルをPCに接続。 
+
+・PCでは StrawberryPi-Pico をストレージとして認識。 
+
+・下記URLからUF2ファイルをダウンロードして、ストレージに保存。 
+
+　　　https://circuitpython.org/board/raspberry_pi_pico/ 
+
+・Arduino IDEの環境設定。(Arduino IDEの導入方法は割愛。) 
+
+　・ボードライブラリの追加。 
+
+　　IDE：ファイル>基本設定>追加のボードマネージャのURLに、 
+
+( https://github.com/earlephilhower/arduino-pico/releases/download/global/package_rp2040_index.json )　を入力し適用。 
+
+　　IDE：ボードマネージャ>「RP2040」で検索>「Raspberry Pi Pico/RP2040/RP2350　by Earle F. Philhower」　をインストール。 
+
+・ボードの選択。 
+
+　IDE：ツール>ボード>Raspberry Pi Pico/RP2040/RP2350>Waveshare RP2040 Zero 
+
+　　　を選択。 
+
+・環境設定完了。Arduino IDEでプログラム書き込み可能。 
+
 　
-ウォーターポンプはデュポンコネクタ等で配線加工してください。(メス,二つ口)
 
-　　参考：https://amzn.asia/d/89GqBZK
+サンプルプログラム 
 
-　　
+https://github.com/cell-plus/StrawberryPi-Pico/blob/main/main.ino 
 
-　　
+動作内容：	センサー値に応じてLEDの色を変更。(赤→黄→緑→青) 
 
-　　
+センサー値が閾値以下のとき、ポンプが設定時間動作。 
 
-    
- ★使い方★
- 
-・BOOTボタンを押しながら、USBケーブルをパソコンに接続。
+ポンプ動作中はStrawberryPi-Pico基板上のNeoPixelが白色にも点滅。 
 
-・PCではRP2040-Zeroをストレージとして認識。
+※各閾値はご利用の環境に応じて調整してください。 
 
-・UF2ファイルをダウンロードして、ストレージに保存。
+　
 
-　　　https://circuitpython.org/board/raspberry_pi_pico/
+その他 
 
-・次にArduino IDEの環境設定。
+下記のピンを使用することが出来ます。温湿度センサーなどの機能拡張にご利用ください。 
 
-　・ボードライブラリの追加。
- 
-　　IDE：ファイル>基本設定>追加のボードマネージャのURLに、( https://github.com/earlephilhower/arduino-pico/releases/download/global/package_rp2040_index.json )　を入力し適用。
-  
-　　IDE：ボードマネージャ>「RP2040」で検索>「Raspberry Pi Pico/RP2040/RP2350　by Earle F. Philhower」　をインストール。
-
-・ボードの選択。
-
-　IDE：ツール>ボード>Raspberry Pi Pico/RP2040/RP2350>Waveshare RP2040 Zero
-
-　　　を選択。
-
-・環境設定完了。
+拡張ピン：0、1、14、15、27/A1、28/A2、29/A3	電源ピン：3V3、VSYS/5V、GND 
 
 ・あとは好きなプログラムを入れて遊んでください。
 
