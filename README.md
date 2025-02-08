@@ -119,8 +119,6 @@ https://github.com/cell-plus/StrawberryPi-Pico/blob/main/main.ino
 
 拡張ピン：0、1、14、15、27/A1、28/A2、29/A3	電源ピン：3V3、VSYS/5V、GND 
 
-・あとは好きなプログラムを入れて遊んでください。
 
-　まずはmain.inoなど。。。　https://github.com/cell-plus/StrawberryPi-Pico/blob/main/main.ino
 
  
