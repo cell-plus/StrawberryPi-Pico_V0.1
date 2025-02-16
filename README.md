@@ -45,23 +45,39 @@
 
 ●その他　　：	本器は電源投入と同時に動作開始します。 
 
+
+
+ 機能内容(サンプルプログラム) 
+
+●土壌水分センサーによる、土の湿り具合のセンシング。 
+
+●センサー値に応じてLED(本器基板上およびLEDテープ)の色を変更。(赤→黄→緑→青)  
+
+●センサー値が閾値以下のとき、ポンプが設定時間動作。  
+
+●ポンプ動作中は本器基板上のLEDが白色にも点滅。  
+
 　
 
-オプション品と配線接続 
+キット付属品と配線接続 
 
-●ウォーターポンプ　：	https://amzn.asia/d/5MyBmeY 
+　●ウォーターポンプ　：	https://amzn.asia/d/5MyBmeY 
 
-　デュポンコネクタなどで配線加工してください。(メス,二つ口)　参考：https://amzn.asia/d/89GqBZK 
+　　デュポンコネクタなどで配線加工してください。(メス,二つ口)　参考：https://amzn.asia/d/89GqBZK 
 
-接続；Pump　VSS：赤線、　VCC：黒線 
+　接続：Pump　VSS：赤線、　VCC：黒線 
 
-●静電容量式土壌水分センサー　：	https://amzn.asia/d/6kMGpRw 
+　●静電容量式土壌水分センサー　：	https://amzn.asia/d/6kMGpRw 
 
-　接続：Sensor　A0：黄線、　3V3：赤線、　GND：黒線 
+　　接続：Sensor　A0：黄線、　3V3：赤線、　GND：黒線 
 
-●NeoPixel LEDテープ　：	https://amzn.asia/d/j20iAux 
+ 
 
-　接続；LED　GND：白線、　25：緑線、　VSS：赤線 
+オプション:キットに含まれません。なくても動作します。 
+
+　●NeoPixel LEDテープ(144連)　：	https://amzn.asia/d/j20iAux	 
+
+　　接続：LED　GND：白線、　25：緑線、　VSS：赤線 
 
 　 
 
